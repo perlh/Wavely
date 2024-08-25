@@ -20,3 +20,8 @@
 - 编辑
 
 ![main](imgs/edit.jpg)
+
+
+## 关于
+
+邮箱：hsmcool@qq.com
