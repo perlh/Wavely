@@ -114,6 +114,9 @@ chmod 755 /Users/$USER/Desktop/Wavely_darwin_arm64_1.5.2.app/Contents/MacOS/Wave
 # 免责声明
 本工具仅面向合法授权的企业安全建设行为，如您需要测试本工具的可用性，请自行搭建靶机环境。 为避免被恶意使用，本项目所有收录的poc均为漏洞的理论判断，不存在漏洞利用过程，不会对目标发起真实攻击和漏洞利用。 在使用本工具进行检测时，您应确保该行为符合当地的法律法规，并且已经取得了足够的授权。请勿对非授权目标进行扫描。 如您在使用本工具的过程中存在任何非法行为，您需自行承担相应后果，我们将不承担任何法律及连带责任。
 
+# Star Chart
+[![Stargazers over time](https://starchart.cc/perlh/wavely.svg?variant=adaptive)](https://starchart.cc/perlh/wavely)
+
 # 捐赠
 如果 Wavely 对您帮助很大，您可以通过以下方式支持我们：
 
