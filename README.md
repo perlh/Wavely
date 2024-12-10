@@ -4,23 +4,26 @@
 ![main](imgs/1.png)
 
 ## ✨ 功能
-- [x] 实现nuclei poc管理的桌面应用，对nuclei模版的增删查改操作
-- [x] 支持查看nuclei模版请求响应包
+- [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
+- [x] 支持 `nuclei` 扫描
+- [x] 实现多任务、并行扫描
+- [x] 查看 `nuclei` 模版请求响应包
+- [x] 支持自定义 `nuclei` `DNSLOG` 服务器
+- [x] 支持自定义扫描速率
+- [x] 支持`http代理`（http、https、socks5）
 - [x] 支持`MacOS`、`Windows`和`Linux`操作系统
 - [x] 使用全新`nuclei v3`检测引擎
 - [x] 兼容`yamlv2`和`yamlv3` nuclei template
-- [x] 实现多任务、并行扫描
-- [x] 支持自定义nuclei DNSLOG服务器
-- [x] 支持`http代理`（http、https、socks5）
 - [x] 支持主题切换
-- [x] 支持多种nuclei模版导入方式
+- [x] 支持多种 `nuclei` 模版导入方式
 - [x] 基本支持简体中文和英文
 
-### 后续实现
+### 后期功能实现
 
 - [ ] App设置-配置持久化生效
 - [ ] 显示扫描进度
 - [ ] POC导出功能
+- [ ] 扫描任务暂停功能
 
 # 快速使用
 
