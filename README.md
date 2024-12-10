@@ -16,6 +16,7 @@
 - [x] 兼容`yamlv2`和`yamlv3` nuclei template
 - [x] 支持主题切换
 - [x] 支持多种 `nuclei` 模版导入方式
+- [x] 支持 `nuclei` 模版去重导入
 - [x] 基本支持简体中文和英文
 
 ### 后期功能实现
