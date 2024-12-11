@@ -35,8 +35,12 @@
 3. 终端执行:`sudo xattr -d com.apple.quarantine /Applications/Wavely.app`
 
 #### Windows
-1. 解压，得到exe文件，保存到自定义文件夹中即可。
 
+##### 安装程序安装
+-  使用 `Wavely-amd64-installer.exe.zip`
+##### 手动安装
+-  下载`Wavely_1.5.4_windows_amd64.exe
+`文件，得到exe文件，保存到自定义文件夹中即可。
 ## POC模版导入
 
 #### POC模版保存路径
