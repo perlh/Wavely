@@ -1,10 +1,10 @@
 ## wavely
-## nuclei模版管理工具
+### nuclei模版管理工具
 由于没找到一款比较好用的poc管理器，，便自己开发了这个，目前仅提供安装包下载。
 
 
 ![main](imgs/1.png)
-## ✨ 功能
+### ✨ 功能
 - [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
 - [x] 支持 `nuclei` 扫描
 - [x] 实现多任务、并行扫描
@@ -27,28 +27,36 @@
 - [ ] POC导出功能
 - [ ] 扫描任务暂停功能
 
-# 快速使用
+## 快速使用
+### 安装
+#### MacOS
+1. 下载相应压缩包并解压，解压文件夹中包含 `Wavely.app`和 `Applications文件夹`。
+2. 将`Wavely.app`拖到`Applications文件夹`中
+3. 终端执行:`sudo xattr -d com.apple.quarantine /Applications/Wavely.app`
+
+#### Windows
+1. 解压，得到exe文件，保存到自定义文件夹中即可。
 
 ## POC模版导入
 
-### POC模版保存路径
-#### 1. macos
+#### POC模版保存路径
+##### 1. macos
 对于MacOS和Linux，首次打开App会在家目录生成模版文件夹
 ``` bash
 ls /Users/$USER/.wavely/templates # macos
 ls /home/$USER/.wavely/templates    # linux
 ```
-#### 2. windows
+##### 2. windows
 会在wavely.exe的同级目录下创建`.wavely/templates`，将POC放入此文件夹中（请开启显示隐藏文件/文件夹）。
 
 
-### POC导入
-#### 1. 在App中导入POC（带POC去重）
+#### POC导入
+##### 1. 在App中导入POC（带POC去重）
 - 点击`从文件夹中导入`按钮，选择`nuclei poc文件目录`。
 
 ![alt text](imgs/14.png)
 
-#### 2. 手动导入POC（不带POC去重）
+##### 2. 手动导入POC（不带POC去重）
 1. 打开 `Wavely`，将初始化数据库和poc配置目录。
 2. 将nuclei poc文件复制到以下文件夹中：
     - **MacOS**：/Users/$USER/.wavely/templates
@@ -60,7 +68,7 @@ ls /home/$USER/.wavely/templates    # linux
 ![main](imgs/13.png)
 
 
-## 功能展示
+#### 功能展示
 ##### 模版管理
 
 ![main](imgs/1.png)
@@ -91,7 +99,7 @@ ls /home/$USER/.wavely/templates    # linux
 #### 添加Nuclei模版
 ![main](imgs/11.png)
 
-### App设置
+#### App设置
 - 切换POC编辑器主题
 
 ![main](imgs/4.png)
@@ -108,20 +116,20 @@ ls /home/$USER/.wavely/templates    # linux
 
 ![main](imgs/7.png)
 
-## 常见问题
-#### Windows启动时闪现弹出命令框
+### 常见问题
+##### Windows启动时闪现弹出命令框
 为正常现象，不影响App的功能
-####  Macos 无法打开App
+#####  Macos 无法打开App
 由于没有使用apple证书签名app，可能会提示解除安全验证：`软件显示禁止符号` 或 `无法验证软件身份` 或 `提示已损坏故不能正常打开`，请参考：
 
 ##### 方案1
 执行如下命令即可：
 ``` bash
-chmod 755 /Users/$USER/Desktop/Wavely_darwin_arm64_1.5.2.app/Contents/MacOS/Wavely
+sudo xattr -d com.apple.quarantine Applications/Wavely.app
 ```
 ##### 方案2
-```
-sudo xattr -d com.apple.quarantine Applications/Wavely.app
+``` bash
+chmod 755 /Users/$USER/Desktop/Wavely_darwin_arm64_1.5.2.app/Contents/MacOS/Wavely
 ```
 
 # 免责声明
