@@ -108,11 +108,19 @@ ls /home/$USER/.wavely/templates    # linux
 ![main](imgs/7.png)
 
 ## 常见问题
+#### Windows启动时闪现弹出命令框
+为正常现象，不影响App的功能
 ####  Macos 无法打开App
-由于没有使用apple证书签名app，故不能正常打开，需要手动允许App允许，请参考：
+由于没有使用apple证书签名app，可能会提示解除安全验证：`软件显示禁止符号` 或 `无法验证软件身份` 或 `提示已损坏故不能正常打开`，请参考：
+
+##### 方案1
 执行如下命令即可：
 ``` bash
 chmod 755 /Users/$USER/Desktop/Wavely_darwin_arm64_1.5.2.app/Contents/MacOS/Wavely
+```
+##### 方案2
+```
+sudo xattr -d com.apple.quarantine Applications/Wavely.app
 ```
 
 # 免责声明
