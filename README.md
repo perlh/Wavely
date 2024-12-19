@@ -1,9 +1,8 @@
 ## wavely
-### nuclei模版管理工具
-由于没找到一款比较好用的poc管理器，，便自己开发了这个，目前仅提供安装包下载。
 
+一款便捷、实用的 POC 管理工具。
 
-![main](imgs/1.png)
+![main](imgs/view0.png)
 ### ✨ 功能
 - [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
 - [x] 支持`MacOS`、`Windows`和`Linux`操作系统
@@ -34,7 +33,7 @@
 ##### 在App中导入POC（带POC去重）
 - 点击`从文件夹中导入`按钮，选择`nuclei poc文件目录`。
 
-![alt text](imgs/14.png)
+![alt text](imgs/view1.png)
 
 ### 快速使用
 
