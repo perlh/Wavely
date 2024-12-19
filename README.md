@@ -6,22 +6,19 @@
 ![main](imgs/1.png)
 ### ✨ 功能
 - [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
-- [x] 支持 `nuclei` 扫描
-- [x] 实现多任务、并行扫描
-- [x] 查看 `nuclei` 模版请求响应包
-- [x] 支持自定义 `nuclei` `DNSLOG` 服务器
-- [x] 支持自定义扫描速率
-- [x] 支持`http代理`（http、https、socks5）
 - [x] 支持`MacOS`、`Windows`和`Linux`操作系统
-- [x] 使用全新`nuclei v3`检测引擎
-- [x] 兼容`yamlv2`和`yamlv3` nuclei template
-- [x] 支持主题切换
+- [x] 实现`选择多个POC`、`多个扫描任务`和`多目标`并行扫描
+- [x] 支持自定义 `DNSLOG服务器`，支持`自定义扫描速率`和支持`http代理`（http、https、socks5）
+- [x] 支持查看 POC 匹配到的请求包和响应包
+- [x] 使用全新`nuclei v3`检测引擎，兼容 yamlv2 和 yamlv3 nuclei template
+- [x] 支持 **POC 编辑器**主题切换
 - [x] 支持多种 `nuclei` 模版导入方式
 - [x] 支持 `nuclei` 模版去重导入
-- [x] 基本支持国际化【简体中文/英文】
-- [x] 扫描任务停止功能
+- [x] 支持国际化（支持**简体中文**和**英文**）
+- [x] 支持手动停止扫描任务
 - [x] 支持配置持久化
-- [x] 支持api扫描
+- [x] 支持API扫描（支持带目录扫描，如：http://target.com/api）
+
 ## 安装
 #### MacOS
 1. 下载相应压缩包并解压，解压文件夹中包含 `Wavely.app`和 `Applications文件夹`。
@@ -29,76 +26,65 @@
 3. 终端执行:`sudo xattr -d com.apple.quarantine /Applications/Wavely.app`
 
 #### Windows
+-  使用 `Wavely-amd64-installer.exe.zip` 安装程序进行安装
 
-##### 安装程序安装
--  使用 `Wavely-amd64-installer.exe.zip`
-##### 手动安装
--  下载`Wavely_1.5.4_windows_amd64.exe
-`文件，得到exe文件，保存到自定义文件夹中即可。
 
-## 快速使用
-#### POC导入
+
+### POC导入
 ##### 在App中导入POC（带POC去重）
 - 点击`从文件夹中导入`按钮，选择`nuclei poc文件目录`。
 
 ![alt text](imgs/14.png)
 
-> 也可支持手动导入POC（不带POC去重）【不建议使用】
-> 1. 打开 `Wavely`，将初始化数据库和poc配置目录。
-> 2. 将nuclei poc文件复制到以下文件夹中：
-    - **MacOS**：/Users/$USER/.wavely/templates
-    - **Windows**：.wavely/templates
-> 3. 打开 `Wavely`，进入**设置**->**模版**->点击**更新按钮图标**。
-![main](imgs/13.png)
+### 快速使用
+
+以扫描thinkphp漏洞为例
+##### 1、搜索 POC 并扫描
+- 不选择poc，则对搜索结果进行全扫描
+- 选择poc后，则对选择的poc进行扫描
+
+![main](imgs/view2.png)
+##### 2、添加目标
+- 按行添加目标
+
+![main](imgs/view3.png)
+##### 3、扫描结果
+- 点击POC ID可跳转到POC编辑界面
+
+![main](imgs/view4.png)
 
 
-#### 功能展示
-##### 模版管理
+#####  4、POC测试
+- 对于测试匹配到的POC，可显示请求响应包
 
-![main](imgs/1.png)
-##### 扫描任务
-- 选择thinkphp的poc进行扫描
-
-![main](imgs/2.png)
-##### 扫描结果
-- 扫描结果
-- 可复制扫描结果
-
-![main](imgs/3.png)
+![main](imgs/view5.png)
 
 
-####  编辑nuclie模版
-- 编辑模版
 
-![main](imgs/8.png)
+##### 5、添加Nuclei模版
+![main](imgs/view6.png)
 
-- 匹配请求包（需扫描匹配POC成功时才可看到请求响应包）
+##### 6、App设置
+###### 通用设置
+1. 可切换POC编辑器主题
+2. 选择语言
 
-![main](imgs/9.png)
-
-- 匹配响应包（需扫描匹配POC成功时才可看到请求响应包）
-
-![main](imgs/10.png)
-
-#### 添加Nuclei模版
-![main](imgs/11.png)
-
-#### App设置
-- 切换POC编辑器主题
-
-![main](imgs/4.png)
-
+![main](imgs/view7.png)
+###### 网络设置
 - 添加HTTP代理
 
-![main](imgs/5.png)
+![main](imgs/view8.png)
 
+###### 扫描设置
 - POC扫描参数设置
+- 设置扫描并发数
 
-![main](imgs/6.png)
+![main](imgs/view9.png)
+###### 模版设置
+- 更新数据库
+- 导入模版
 
-- 模版导入功能
-
-![main](imgs/7.png)
+![main](imgs/view10.png)
 
 ### 常见问题
 ##### Windows启动时闪现弹出命令框
