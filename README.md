@@ -18,17 +18,11 @@
 - [x] 支持主题切换
 - [x] 支持多种 `nuclei` 模版导入方式
 - [x] 支持 `nuclei` 模版去重导入
-- [x] 基本支持简体中文和英文
-
-### 后期功能实现
-
-- [ ] App设置-配置持久化生效
-- [ ] 显示扫描进度
-- [ ] POC导出功能
-- [ ] 扫描任务暂停功能
-
-## 快速使用
-### 安装
+- [x] 基本支持国际化【简体中文/英文】
+- [x] 扫描任务停止功能
+- [x] 支持配置持久化
+- [x] 支持api扫描
+## 安装
 #### MacOS
 1. 下载相应压缩包并解压，解压文件夹中包含 `Wavely.app`和 `Applications文件夹`。
 2. 将`Wavely.app`拖到`Applications文件夹`中
@@ -41,34 +35,20 @@
 ##### 手动安装
 -  下载`Wavely_1.5.4_windows_amd64.exe
 `文件，得到exe文件，保存到自定义文件夹中即可。
-## POC模版导入
 
-#### POC模版保存路径
-##### 1. macos
-对于MacOS和Linux，首次打开App会在家目录生成模版文件夹
-``` bash
-ls /Users/$USER/.wavely/templates # macos
-ls /home/$USER/.wavely/templates    # linux
-```
-##### 2. windows
-会在wavely.exe的同级目录下创建`.wavely/templates`，将POC放入此文件夹中（请开启显示隐藏文件/文件夹）。
-
-
+## 快速使用
 #### POC导入
-##### 1. 在App中导入POC（带POC去重）
+##### 在App中导入POC（带POC去重）
 - 点击`从文件夹中导入`按钮，选择`nuclei poc文件目录`。
 
 ![alt text](imgs/14.png)
 
-##### 2. 手动导入POC（不带POC去重）
-1. 打开 `Wavely`，将初始化数据库和poc配置目录。
-2. 将nuclei poc文件复制到以下文件夹中：
+> 也可支持手动导入POC（不带POC去重）【不建议使用】
+> 1. 打开 `Wavely`，将初始化数据库和poc配置目录。
+> 2. 将nuclei poc文件复制到以下文件夹中：
     - **MacOS**：/Users/$USER/.wavely/templates
     - **Windows**：.wavely/templates
-3. 打开 `Wavely`，进入**设置**->**模版**->点击**更新按钮图标**。
-
-> 注意：首次打开App将初始化数据库和POC保存路径
-
+> 3. 打开 `Wavely`，进入**设置**->**模版**->点击**更新按钮图标**。
 ![main](imgs/13.png)
 
 
