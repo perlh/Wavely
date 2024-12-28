@@ -1,7 +1,7 @@
 ## wavely
 
-一款便捷、实用的 POC 管理工具。
-A convenient and practical Nuclei POC management tool.
+- 一款便捷、实用的 POC 管理工具。
+- A convenient and practical Nuclei POC management tool.
 
 ![main](imgs/view0.png)
 ![main](imgs/edit_poc.png)
