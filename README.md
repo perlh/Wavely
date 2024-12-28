@@ -79,7 +79,7 @@
 
 
 ##### 5、添加Nuclei模版
-![main](imgs/view6.png)
+![main](imgs/add_templates.png)
 
 ##### 6、App设置
 ###### 通用设置
