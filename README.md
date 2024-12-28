@@ -1,8 +1,10 @@
 ## wavely
 
 一款便捷、实用的 POC 管理工具。
+A convenient and practical Nuclei POC management tool.
 
 ![main](imgs/view0.png)
+![main](imgs/edit_poc.png)
 ### ✨ 功能
 - [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
 - [x] 支持`MacOS`、`Windows`和`Linux`操作系统
@@ -17,6 +19,22 @@
 - [x] 支持手动停止扫描任务
 - [x] 支持配置持久化
 - [x] 支持API扫描（支持带目录扫描，如：http://target.com/api）
+
+#### English
+
+- [x] A desktop application for managing `nuclei` `POC`, with operations of adding, deleting, querying and modifying `nuclei` templates.
+- [x] Support operating systems including `MacOS`, `Windows` and `Linux`.
+- [x] Realize parallel scanning of `selecting multiple POCs`, `multiple scanning tasks` and `multiple targets`.
+- [x] Support customizing `DNSLOG server`, support `customizing scanning rate` and support `http proxy` (http, https, socks5).
+- [x] Support viewing the request packets and response packets matched by POC.
+- [x] Use the brand-new `nuclei v3` detection engine, which is compatible with yamlv2 and yamlv3 nuclei templates.
+- [x] Support theme switching for the **POC editor**.
+- [x] Support multiple ways of importing `nuclei` templates.
+- [x] Support deduplicating and importing `nuclei` templates.
+- [x] Support internationalization (support **Simplified Chinese** and **English**).
+- [x] Support manually stopping scanning tasks.
+- [x] Support configuration persistence.
+- [x] Support API scanning (support scanning with directories, for example: http://target.com/api). 
 
 ## 安装
 #### MacOS
@@ -84,6 +102,20 @@
 - 导入模版
 
 ![main](imgs/view10.png)
+
+
+#### 模版编辑
+-  编辑POC
+
+![main](imgs/edit_poc.png)
+-  编辑POC（请求）
+
+![main](imgs/edit_poc_req.png)
+
+-  编辑POC （响应）
+
+![main](imgs/edit_poc_res.png)
+
 
 ### 常见问题
 ##### Windows启动时闪现弹出命令框
