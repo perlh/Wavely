@@ -79,7 +79,15 @@
 
 
 ##### 5、添加Nuclei模版
+- 代码添加poc
+
 ![main](imgs/add_templates.png)
+
+
+- 图形化生成poc
+
+![main](imgs/gen_poc.png)
+
 
 ##### 6、App设置
 ###### 通用设置
