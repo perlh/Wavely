@@ -19,6 +19,7 @@
 - [x] 支持手动停止扫描任务
 - [x] 支持配置持久化
 - [x] 支持API扫描（支持带目录扫描，如：http://target.com/api）
+- [x] 支持图形化生成poc（简单poc）
 
 #### English
 
@@ -54,8 +55,6 @@
 ![alt text](imgs/view1.png)
 
 ### 快速使用
-
-以扫描thinkphp漏洞为例
 ##### 1、搜索 POC 并扫描
 - 不选择poc，则对搜索结果进行全扫描
 - 选择poc后，则对选择的poc进行扫描
@@ -71,10 +70,14 @@
 ![main](imgs/view4.png)
 
 
-#####  4、POC测试
-- 对于测试匹配到的POC，可显示请求响应包
+#####  4、Nuclei 模版编辑
+- 编辑模版
 
-![main](imgs/view5.png)
+![main](imgs/edit_poc1.png)
+
+- 查看请求/响应包（需检测匹配成功）
+
+![main](imgs/edit_poc2.png)
 
 
 
