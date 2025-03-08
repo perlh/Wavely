@@ -4,7 +4,10 @@
 - A convenient and practical Nuclei POC management tool.
 
 ![main](imgs/view0.png)
-![main](imgs/edit_poc.png)
+![main](imgs/edit_poc1.png)
+![main](imgs/edit_poc2.png)
+![main](imgs/gen_poc.png)
+
 ### ✨ 功能
 - [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
 - [x] 支持`MacOS`、`Windows`和`Linux`操作系统
