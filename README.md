@@ -3,10 +3,14 @@
 - 一款便捷、实用的 POC 管理工具。
 - A convenient and practical Nuclei POC management tool.
 
+
 ![main](imgs/view0.png)
-![main](imgs/edit_poc1.png)
-![main](imgs/edit_poc2.png)
-![main](imgs/gen_poc.png)
+
+#### v2.1.3 概览图
+![main](imgs/2.png)
+![main](imgs/3.png)
+![main](imgs/4.png)
+![main](imgs/5.png)
 
 ### ✨ 功能
 - [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
@@ -18,7 +22,7 @@
 - [x] 支持 **POC 编辑器**主题切换
 - [x] 支持多种 `nuclei` 模版导入方式
 - [x] 支持 `nuclei` 模版去重导入
-- [x] 支持国际化（支持**简体中文**和**英文**）
+- [x] 支持国际化（支持**简体中文**和**英文**，已覆盖大部分区域）
 - [x] 支持手动停止扫描任务
 - [x] 支持配置持久化
 - [x] 支持API扫描（支持带目录扫描，如：http://target.com/api）
