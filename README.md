@@ -6,13 +6,11 @@
 
 ![main](imgs/view0.png)
 
-#### v2.1.3 概览图
 
-![main](imgs/2.png)
-![main](imgs/1.png)
-![main](imgs/3.png)
-![main](imgs/4.png)
-![main](imgs/5.png)
+开发Wavely投入了大量时间精力，只为它功能更强、运行更稳。若您使用时感受到价值，烦请[捐赠](#捐赠)，您的支持是我持续优化APP的动力，感谢！ 
+
+
+
 
 ### ✨ 功能
 - [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
@@ -135,6 +133,11 @@
 -  编辑POC （响应）
 
 ![main](imgs/edit_poc_res.png)
+
+
+
+
+
 
 
 ### 常见问题
