@@ -1,15 +1,14 @@
-## wavely
+## 1. wavely
 
 - 一款便捷、实用的 POC 管理工具。
 - A convenient and practical Nuclei POC management tool.
 
 
-![main](imgs/view0.png)
+![main](imgs/2.png)
 
-- 下载链接：https://github.com/perlh/Wavely/releases/tag/v2.1.2
+- 下载链接：https://github.com/perlh/Wavely/releases/tag/v2.1.3
 - 开发Wavely投入了大量时间精力，只为它功能更强、运行更稳。若您使用时感受到价值，烦请[捐赠](#捐赠)，您的支持是我持续优化APP的动力，感谢！ 
-
-
+- **本工具严禁通过其他平台进行售卖**！
 
 
 ### ✨ 功能
@@ -44,95 +43,64 @@
 - [x] Support configuration persistence.
 - [x] Support API scanning (support scanning with directories, for example: http://target.com/api). 
 
-## 安装
+## 2. 安装
 #### MacOS
 1. 下载相应压缩包并解压，解压文件夹中包含 `Wavely.app`和 `Applications文件夹`。
 2. 将`Wavely.app`拖到`Applications文件夹`中
 3. 终端执行:`sudo xattr -d com.apple.quarantine /Applications/Wavely.app`
 
-#### Windows
--  使用 `Wavely-amd64-installer.exe.zip` 安装程序进行安装
-
-
-
-### POC导入
+## 3. 使用
+### 3.1 POC导入
 ##### 在App中导入POC（带POC去重）
 - 点击`从文件夹中导入`按钮，选择`nuclei poc文件目录`。
 
 ![alt text](imgs/view1.png)
 
-### 快速使用
-##### 1、搜索 POC 并扫描
+### 3.2 创建扫描任务
+##### 3.2.1 选择指定`POC`，点击顶部`扫描按钮`
 - 不选择poc，则对搜索结果进行全扫描
 - 选择poc后，则对选择的poc进行扫描
 
 ![main](imgs/view2.png)
-##### 2、添加目标
-- 按行添加目标
-
-![main](imgs/view3.png)
-##### 3、扫描结果
+##### 3.2.2 扫描结果
 - 点击POC ID可跳转到POC编辑界面
 
-![main](imgs/view4.png)
+![main](imgs/1.png)
 
 
-#####  4、Nuclei 模版编辑
-- 编辑模版
+###  3.3 Nuclei 模版编辑/添加
+#### 3.3.1 编辑poc
+![main](imgs/4.png)
 
-![main](imgs/edit_poc1.png)
+####  3.3.2  查看请求/响应包（需检测匹配成功）
+![main](imgs/3.png)
 
-- 查看请求/响应包（需检测匹配成功）
-
-![main](imgs/edit_poc2.png)
-
-
-
-##### 5、添加Nuclei模版
-- 代码添加poc
-
-![main](imgs/add_templates.png)
+####  3.3.3  图形化生成poc
+![main](imgs/5.png)
 
 
-- 图形化生成poc
-
-![main](imgs/gen_poc.png)
-
-
-##### 6、App设置
-###### 通用设置
+### 3.4 App设置
+#### 3.4.1 通用设置
 1. 可切换POC编辑器主题
 2. 选择语言
 
 ![main](imgs/view7.png)
-###### 网络设置
+##### 3.4.2 网络设置
 - 添加HTTP代理
 
 ![main](imgs/view8.png)
 
-###### 扫描设置
+##### 3.4.3 扫描设置
 - POC扫描参数设置
 - 设置扫描并发数
 
 ![main](imgs/view9.png)
-###### 模版设置
+##### 3.4.4  模版设置
 - 更新数据库
 - 导入模版
 
 ![main](imgs/view10.png)
 
-
-#### 模版编辑
--  编辑POC
-
-![main](imgs/edit_poc.png)
--  编辑POC（请求）
-
-![main](imgs/edit_poc_req.png)
-
--  编辑POC （响应）
-
-![main](imgs/edit_poc_res.png)
 
 
 
