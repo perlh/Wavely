@@ -1,128 +1,109 @@
-## 1. wavely
+## Wavely - 高效便捷的 Nuclei POC 图形化管理利器
 
-- 一款便捷、实用的 POC 管理工具。
-- A convenient and practical Nuclei POC management tool.
+Wavely，一款为 Nuclei POC 管理打造的图形化工具。
 
-
-![main](imgs/2.png)
-
-- 下载链接：https://github.com/perlh/Wavely/releases/tag/v2.1.3
-- 开发Wavely投入了大量时间精力，只为它功能更强、运行更稳。若您使用时感受到价值，烦请[捐赠](#捐赠)，您的支持是我持续优化APP的动力，感谢！ 
-- **本工具严禁通过其他平台进行售卖**！
+![main](imgs/p1.png)
 
 
-### ✨ 功能
-- [x] 实现 `nuclei` `poc` 管理的桌面应用，对 `nuclei` 模版的增删查改操作
-- [x] 支持`MacOS`、`Windows`和`Linux`操作系统
-- [x] 实现`选择多个POC`、`多个扫描任务`和`多目标`并行扫描
-- [x] 支持自定义 `DNSLOG服务器`，支持`自定义扫描速率`和支持`http代理`（http、https、socks5）
-- [x] 支持查看 POC 匹配到的请求包和响应包
-- [x] 使用全新`nuclei v3`检测引擎，兼容 yamlv2 和 yamlv3 nuclei template
-- [x] 支持 **POC 编辑器**主题切换
-- [x] 支持多种 `nuclei` 模版导入方式
-- [x] 支持 `nuclei` 模版去重导入
-- [x] 支持国际化（支持**简体中文**和**英文**，已覆盖大部分区域）
-- [x] 支持手动停止扫描任务
-- [x] 支持配置持久化
-- [x] 支持API扫描（支持带目录扫描，如：http://target.com/api）
-- [x] 支持图形化生成poc（简单poc）
+1. **安装包获取**：前往下载链接下载安装包，开启高效管理之旅。
+2. **捐赠支持**：若 Wavely 助力您提升工作效率，诚邀[捐赠](#捐赠)，您的支持是持续优化的关键动力，深表感谢！
+3. **常见问题**：关于使用与安装的常见疑问，可跳转至 [常见问题](#常见问题) 板块查阅。
 
-#### English
 
-- [x] A desktop application for managing `nuclei` `POC`, with operations of adding, deleting, querying and modifying `nuclei` templates.
-- [x] Support operating systems including `MacOS`, `Windows` and `Linux`.
-- [x] Realize parallel scanning of `selecting multiple POCs`, `multiple scanning tasks` and `multiple targets`.
-- [x] Support customizing `DNSLOG server`, support `customizing scanning rate` and support `http proxy` (http, https, socks5).
-- [x] Support viewing the request packets and response packets matched by POC.
-- [x] Use the brand-new `nuclei v3` detection engine, which is compatible with yamlv2 and yamlv3 nuclei templates.
-- [x] Support theme switching for the **POC editor**.
-- [x] Support multiple ways of importing `nuclei` templates.
-- [x] Support deduplicating and importing `nuclei` templates.
-- [x] Support internationalization (support **Simplified Chinese** and **English**).
-- [x] Support manually stopping scanning tasks.
-- [x] Support configuration persistence.
-- [x] Support API scanning (support scanning with directories, for example: http://target.com/api). 
+#### ✨ 功能一览
 
-## 2. 安装
-#### MacOS
-1. 下载相应压缩包并解压，解压文件夹中包含 `Wavely.app`和 `Applications文件夹`。
-2. 将`Wavely.app`拖到`Applications文件夹`中
-3. 终端执行:`sudo xattr -d com.apple.quarantine /Applications/Wavely.app`
+- [x] 实现对nuclei模板的`添加`、`删除`、`查询`以及`修改`操作。
+- [x] 兼容`MacOS`、`Windows`和`Linux`操作系统。
+- [x] 实现`选择多个POC`、`多个扫描任务`以及`多目标`的并行扫描功能。
+- [x] 支持`自定义DNSLOG服务器`，`自定义扫描速率`，同时`支持http代理（http、https、socks5）`。
+- [x] 支持查看 POC 匹配到的`请求包与响应包`。
+- [x] 支持 POC 编辑器的`主题切换`。
+- [x] 支持nuclei`模板一键导入`(选择POC文件夹即可导入，可实现nuclei模版去重导入，基于template id)。
 
-## 3. 使用
-### 3.1 POC导入
-##### 在App中导入POC（带POC去重）
-- 点击`从文件夹中导入`按钮，选择`nuclei poc文件目录`。
+- [x] 支持`国际化`，已广泛覆盖大部分区域。
+- [x] 支持`手动停止扫描`任务，便于灵活控制扫描进程。
+- [x] 支持`配置持久化`，确保用户配置信息持久化保存。
+- [x] 支持 `API 扫描`，包括带目录扫描（如：http://target.com/api）。
+- [x] 支持`图形化生成简单poc`，降低 poc 生成门槛。
 
-![alt text](imgs/view1.png)
 
-### 3.2 创建扫描任务
-##### 3.2.1 选择指定`POC`，点击顶部`扫描按钮`
-- 不选择poc，则对搜索结果进行全扫描
-- 选择poc后，则对选择的poc进行扫描
+## 1、安装指南
+#### 1.1 MacOS 安装步骤
+1. 下载对应压缩包并解压，解压文件夹内包含`Wavely.app`和`Applications`文件夹。
+2. 将`Wavely.app`拖移至`Applications`文件夹中。
+3. 在终端执行：`sudo xattr -d com.apple.quarantine /Applications/Wavely.app` 。
 
-![main](imgs/view2.png)
-##### 3.2.2 扫描结果
-- 点击POC ID可跳转到POC编辑界面
+#### 1.2 Windows 安装步骤
+1. 下载对应压缩包并解压，执行Wavely-xxx-installer.exe安装程序
+
+####  1.3 DNSLOG 设置说明
+- 系统默认采用 Nuclei 默认 DNSLOG 服务。
+- 如需搭建个人 Nuclei DNSLOG 服务器，可参考：[搭建指南](https://github.com/projectdiscovery/interactsh) 。
+
+## 2、使用教程
+#### 2.1 注册
+依次点击设置 -> 注册，在注册页面按提示获取设备 ID，完成证书申请后上传证书，即可注册成功。
+#### 2.2 导入方法
+##### 在 App 中导入 POC（具备去重功能）
+- 点击`从文件夹中导入POC`按钮，选择存放` nuclei poc `文件的目录。
+- 系统将自动识别并导入所选目录内的所有 POC 文件，导入过程实时显示进度与文件数量，若存在基于 template id 的重复 POC，系统将自动去重，完成后弹窗告知导入结果。
+
+![alt text](imgs/p2.png)
+
+#### 2.3 创建扫描任务流程
+##### 任务发起操作
+- 选择指定POC后，点击顶部扫描按钮即可启动扫描。
+    - 若未选择 POC，系统将对搜索结果执行全扫描；
+    - 若已选择 POC，则仅针对所选 POC 进行扫描。
+- 此外，点击扫描按钮前，可在任务设置区域自定义扫描速率等参数。
+
+
+![main](imgs/p3.png)
+##### 扫描结果查看
+- 扫描完成后，点击` POC ID `可直接跳转到` POC 编辑界面，方便进一步分析与调整。
 
 ![main](imgs/1.png)
 
 
-###  3.3 Nuclei 模版编辑/添加
-#### 3.3.1 编辑poc
+####  2.4 Nuclei 模版编辑 / 添加操作
+##### 编辑poc
 ![main](imgs/4.png)
 
-####  3.3.2  查看请求/响应包（需检测匹配成功）
+##### 查看请求 / 响应包（需检测匹配成功）
 ![main](imgs/3.png)
 
-####  3.3.3  图形化生成poc
-![main](imgs/5.png)
+#####  图形化生成 POC
+- **表单形式请求包**：通过直观的表单填写方式。
 
+![main](imgs/p4.png)
 
-### 3.4 App设置
-#### 3.4.1 通用设置
-1. 可切换POC编辑器主题
-2. 选择语言
+- **raw 格式请求包**：支持以 raw 格式编辑和生成请求包。
 
-![main](imgs/view7.png)
-##### 3.4.2 网络设置
-- 添加HTTP代理
+![main](imgs/p5.png)
 
-![main](imgs/view8.png)
+- **测试功能**：生成 POC 后，可点击测试按钮快速验证其有效性。
 
-##### 3.4.3 扫描设置
-- POC扫描参数设置
-- 设置扫描并发数
-
-![main](imgs/view9.png)
-##### 3.4.4  模版设置
-- 更新数据库
-- 导入模版
-
-![main](imgs/view10.png)
+![main](imgs/p6.png)
 
 
 
-
-
-
-
-
-### 常见问题
-##### Windows启动时闪现弹出命令框
-为正常现象，不影响App的功能
-#####  Macos 无法打开App
-由于没有使用apple证书签名app，可能会提示解除安全验证：`软件显示禁止符号` 或 `无法验证软件身份` 或 `提示已损坏故不能正常打开`，请参考：
+## 常见问题
+#### Windows 启动时闪现命令框
+此为正常现象，不会对 App 功能产生任何影响，可放心使用。
+####  Macos 无法打开App
+因未使用 Apple 证书签名 App，可能出现解除安全验证提示，如**软件显示禁止符号** 、 **无法验证软件身份** 或 **提示已损坏故不能正常打开** ，可参考以下方案解决：
 
 ##### 方案1
-执行如下命令即可：
+在终端执行命令：
 ``` bash
-sudo xattr -d com.apple.quarantine Applications/Wavely.app
+sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ```
 ##### 方案2
+执行命令：
 ``` bash
-chmod 755 /Users/$USER/Desktop/Wavely_darwin_arm64_1.5.2.app/Contents/MacOS/Wavely
+chmod 755 /Applications/Wavely.app/Contents/MacOS/Wavely
 ```
+
 
 # 免责声明
 本工具仅面向合法授权的企业安全建设行为，如您需要测试本工具的可用性，请自行搭建靶机环境。 为避免被恶意使用，本项目所有收录的poc均为漏洞的理论判断，不存在漏洞利用过程，不会对目标发起真实攻击和漏洞利用。 在使用本工具进行检测时，您应确保该行为符合当地的法律法规，并且已经取得了足够的授权。请勿对非授权目标进行扫描。 如您在使用本工具的过程中存在任何非法行为，您需自行承担相应后果，我们将不承担任何法律及连带责任。
