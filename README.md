@@ -116,5 +116,5 @@ chmod 755 /Applications/Wavely.app/Contents/MacOS/Wavely
 如果 Wavely 对您帮助很大，您可以通过以下方式支持我们：
 
 ### 赞赏码赞助
-<img src="imgs/sponsor.jpg" alt="图片描述" width="300" height="200">
+<img src="imgs/sponsor.jpg" alt="图片描述" width="500" height="500">
 <!-- ![main](imgs/sponsor.jpg) -->
