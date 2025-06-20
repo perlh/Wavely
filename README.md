@@ -45,45 +45,18 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 #### 2.1 注册
 - 依次点击设置 -> 注册，在注册页面按提示获取设备 ID，完成证书申请后上传证书，即可注册成功。
 - 操作详情：https://github.com/perlh/Wavely/wiki
-#### 2.2 导入方法
-##### 在 App 中导入 POC
+#### 2.2 导入 POC
 - 点击`从文件夹中导入POC`按钮，选择存放` nuclei poc `文件的目录。
 
-![alt text](imgs/3-3.png)
+![alt text](imgs/setting2.png)
 
-#### 2.3 创建扫描任务流程
-##### 任务发起操作
-- 选择指定POC后，点击顶部扫描按钮即可启动扫描。
-    - 若未选择 POC，系统将对搜索结果执行全扫描；
-    - 若已选择 POC，则仅针对所选 POC 进行扫描。
-- 此外，点击扫描按钮前，可在任务设置区域自定义扫描速率等参数。
-
-![main](imgs/p3.png)
-##### 扫描结果查看
-- 扫描完成后，点击` POC ID `可直接跳转到` POC 编辑界面，方便进一步分析与调整。
-
-![main](imgs/3-2.png)
-
-
-####  2.4 Nuclei 模版编辑 / 添加操作
+####  2.3 添加/测试 POC
 ##### 编辑poc
-![main](imgs/4.png)
+![main](imgs/add1.png)
 
-##### 查看请求 / 响应包（需检测匹配成功）
-![main](imgs/3.png)
+![main](imgs/add2.png)
 
-#####  图形化生成 POC
-- **表单形式请求包**：通过直观的表单填写方式。
-
-![main](imgs/p4.png)
-
-- **raw 格式请求包**：支持以 raw 格式编辑和生成请求包。
-
-![main](imgs/p5.png)
-
-- **测试功能**：生成 POC 后，可点击测试按钮快速验证其有效性。
-
-![main](imgs/p6.png)
+![main](imgs/edit1.png)
 
 
 
