@@ -1,4 +1,4 @@
-## Wavely - 轻量便捷的 Nuclei POC 漏洞验证可视化管理工具
+## Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具
 **Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具**
 
 
