@@ -2,7 +2,7 @@
 **Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具**
 
 
-![main](imgs/3-1.png)
+![main](imgs/250820.png)
 ![main](imgs/3-2.png)
 
 
