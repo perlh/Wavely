@@ -2,7 +2,7 @@
 **Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具**
 
 
-![main](imgs/250820.png)
+![main](imgs/0822-2.png)
 ![main](imgs/3-2.png)
 
 
@@ -27,6 +27,7 @@
 - [x] **扫描进度实时显示**：提供可视化进度条展示当前扫描状态
 - [x] **扫描结果导出**
 - [x] **POC导出（批量导出）v3.1.7**
+- [x] **POC生成：Raw格式时自动解析模版 v3.1.8**
 
 ## 1、安装
 #### 1.1 MacOS 安装步骤
@@ -52,10 +53,9 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ![alt text](imgs/setting2.png)
 
 ####  2.3 添加/测试 POC
-##### 编辑poc
-![main](imgs/add1.png)
 
-![main](imgs/add2.png)
+![main](imgs/0822-1.png)
+
 
 ![main](imgs/edit1.png)
 
