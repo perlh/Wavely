@@ -8,7 +8,7 @@
 
 
 1. **安装包获取**：前往下载链接[下载安装包](https://github.com/perlh/Wavely/releases)：。
-2. **捐赠支持**：若 Wavely 助力您提升工作效率，诚邀[捐赠](#捐赠)，您的支持是持续优化的关键动力，深表感谢！
+2. **捐赠支持**：[捐赠](#捐赠)。
 3. **常见问题**：关于使用与安装的常见疑问，可跳转至 [常见问题](#常见问题) 板块查阅。
 
 
@@ -26,20 +26,20 @@
 - [x] **POC 生成**：提供图形化界面辅助生成简单 POC
 - [x] **扫描进度实时显示**：提供可视化进度条展示当前扫描状态
 - [x] **扫描结果导出**
-- [x] **POC导出（批量导出）v3.1.7**
-- [x] **POC生成：Raw格式时自动解析模版 v3.1.8**
+- [x] **POC导出（批量导出）** v3.1.7
+- [x] **POC生成**：Raw格式时自动解析模版 v3.1.8
 
 ## 1、安装
-#### 1.1 MacOS 安装步骤
-- 将`Wavely.app`拖移至`Applications`文件夹中。在终端执行：
+### 1.1 MacOS 安装
+将`Wavely.app`拖移至`Applications`文件夹中。在终端执行：
 ``` bash
 sudo xattr -d com.apple.quarantine /Applications/Wavely.app 
 ```
 
-#### 1.2 Windows 安装步骤
+### 1.2 Windows 安装步骤
 - 下载对应压缩包并解压，执行Wavely-xxx-installer.exe安装程序
 
-####  1.3 DNSLOG 设置说明
+###  1.3 DNSLOG 设置说明
 - 系统默认采用 Nuclei 默认 DNSLOG 服务。
 - 如需搭建个人 Nuclei DNSLOG 服务器，可参考：[搭建指南](https://github.com/projectdiscovery/interactsh) 。
 
