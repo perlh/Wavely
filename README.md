@@ -1,18 +1,10 @@
 ## Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具
-**Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具**
 
 
 ![main](imgs/0822-2.png)
-![main](imgs/3-2.png)
+![main](imgs/082501.png)
 
-
-
-1. **安装包获取**：前往下载链接[下载安装包](https://github.com/perlh/Wavely/releases)：。
-2. **捐赠支持**：[捐赠](#捐赠)。
-3. **常见问题**：关于使用与安装的常见疑问，可跳转至 [常见问题](#常见问题) 板块查阅。
-
-
-#### ✨ 功能一览
+## ✨ 功能一览
 - [x] **POC 模板管理**：支持对 nuclei POC 模板的增删查改操作
 - [x] **跨平台兼容**：已支持 MacOS 和 Windows 系统，Linux 版本测试中
 - [x] **多任务扫描**：支持多 POC、多目标批量扫描
@@ -30,6 +22,7 @@
 - [x] **POC生成**：Raw格式时自动解析模版 v3.1.8
 
 ## 1、安装
+>  **常见问题**：关于使用与安装的常见疑问，可跳转至 [常见问题](#常见问题) 板块查阅。
 ### 1.1 MacOS 安装
 将`Wavely.app`拖移至`Applications`文件夹中。在终端执行：
 ``` bash
@@ -42,6 +35,8 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ###  1.3 DNSLOG 设置说明
 - 系统默认采用 Nuclei 默认 DNSLOG 服务。
 - 如需搭建个人 Nuclei DNSLOG 服务器，可参考：[搭建指南](https://github.com/projectdiscovery/interactsh) 。
+
+
 
 ## 2、使用
 #### 2.1 注册
@@ -57,7 +52,7 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ![main](imgs/0822-1.png)
 
 
-![main](imgs/edit1.png)
+![main](imgs/082502.png)
 
 
 
