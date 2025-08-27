@@ -2,7 +2,7 @@
 
 
 ![main](imgs/0822-2.png)
-![main](imgs/082501.png)
+![main](imgs/0827.png)
 
 ## ✨ 功能一览
 - [x] **POC 模板管理**：支持对 nuclei POC 模板的增删查改操作
