@@ -1,8 +1,8 @@
 ## Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具
 
 
-![main](imgs/0822-2.png)
-![main](imgs/0827.png)
+![main](imgs/090901.png)
+![main](imgs/090902.png)
 
 ## ✨ 功能一览
 - [x] **POC 模板管理**：支持对 nuclei POC 模板的增删查改操作
@@ -40,19 +40,25 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 
 ## 2、使用
 #### 2.1 注册
-- 依次点击设置 -> 注册，在注册页面按提示获取设备 ID，完成证书申请后上传证书，即可注册成功。
-- 操作详情：https://github.com/perlh/Wavely/wiki
+Wavely使用注册机制，3.2.0及以上版本与旧版本证书不兼容。若需激活码，可通过以下方式获取：
+- 扫描赞赏码并备注您的邮箱（一年有效）；赞赏 50 及以上即可获得永久激活权限，且可免费享受后续所有版本更新。
+- 如未及时回复激活吗，可通过邮箱：id_0909186@foxmail.com联系。
+- Wavely开发过程不易，感谢您的支持！
+- 有bug或有新的功能建议可在issue上提出。
+
 #### 2.2 导入 POC
 - 点击`从文件夹中导入POC`按钮，选择存放` nuclei poc `文件的目录。
 
-![alt text](imgs/setting2.png)
+![alt text](imgs/090907.png)
 
-####  2.3 添加/测试 POC
+####  2.3 使用
 
-![main](imgs/0822-1.png)
+![main](imgs/090906.png)
+
+![main](imgs/090904.png)
 
 
-![main](imgs/082502.png)
+![main](imgs/090903.png)
 
 
 
