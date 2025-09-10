@@ -54,10 +54,8 @@ Wavely使用注册机制，3.2.0及以上版本与旧版本证书不兼容。若
 ####  2.3 使用
 
 ![main](imgs/090906.png)
-
+![main](imgs/090905.png)
 ![main](imgs/090904.png)
-
-
 ![main](imgs/090903.png)
 
 
