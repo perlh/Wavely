@@ -1,5 +1,5 @@
 ## Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具
-
+- Wiki（下载与激活）：https://github.com/perlh/Wavely/wiki/Wiki
 
 ![main](imgs/090901.png)
 ![main](imgs/090902.png)
