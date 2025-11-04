@@ -1,8 +1,8 @@
 ## Wavely - 轻量便捷的Nuclei POC漏洞管理与验证可视化工具
-- Wiki（下载与激活）：https://github.com/perlh/Wavely/wiki/Wiki
+- Wiki（下载与激活）：https://github.com/perlh/Wavely/wiki
 
 ![main](imgs/090901.png)
-![main](imgs/090902.png)
+![main](imgs/img/11.png)
 
 ## ✨ 功能一览
 - [x] **POC 模板管理**：支持对 nuclei POC 模板的增删查改操作
@@ -53,10 +53,19 @@ Wavely使用注册机制，3.2.0及以上版本与旧版本证书不兼容。若
 
 ####  2.3 使用
 
-![main](imgs/090906.png)
-![main](imgs/090905.png)
-![main](imgs/090904.png)
-![main](imgs/090903.png)
+##### 扫描
+![main](imgs/img/1.png)
+##### 抓包
+![main](imgs/img/2.png)
+![main](imgs/img/3.png)
+![main](imgs/img/4.png)
+![main](imgs/img/5.png)
+##### 全局请求头
+![main](imgs/img/6.png)
+![main](imgs/img/7.png)
+![main](imgs/img/8.png)
+![main](imgs/img/9.png)
+![main](imgs/img/10.png)
 
 
 
