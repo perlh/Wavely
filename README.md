@@ -1,74 +1,76 @@
 ## Wavely - Nuclei POC漏洞管理与验证可视化工具
 - Wiki（下载与激活）：https://github.com/perlh/Wavely/wiki
 
-![main](imgs/090901.png)
+![main](imgs/3.2.5/1.png)
 ![main](imgs/img/11.png)
 
 ## ✨ 功能一览
-- [x] **POC 模板管理**：支持对 nuclei POC 模板的增删查改操作
-- [x] **跨平台兼容**：已支持 MacOS 和 Windows 系统，Linux 版本测试中
+- [x] **POC 模板管理**：支持对 Nuclei POC 模板的增删查改操作
+- [x] **跨平台兼容**：已支持 macOS 和 Windows 系统，Linux 版本测试中
 - [x] **多任务扫描**：支持多 POC、多目标批量扫描
-- [x] **高级配置**：支持自定义 DNSLOG 服务器、扫描速率控制及多协议网络代理（http/https/socks5）
+- [x] **高级配置**：支持自定义 DNSLog 服务器、扫描速率控制及 HTTP/HTTPS/SOCKS5 多协议代理
 - [x] **请求分析**：支持查看 POC 匹配时的完整请求/响应数据包
 - [x] **编辑器优化**：POC 编辑器支持主题切换和字体大小调整
-- [x] **模板导入**：支持一键导入 nuclei 模板，基于 template id 自动去重
+- [x] **模板导入**：支持一键导入 Nuclei 模板，基于 Template ID 自动去重
 - [x] **任务控制**：支持手动停止扫描任务，灵活掌控测试流程
 - [x] **配置持久化**：自动保存用户配置，下次启动无需重复设置参数
 - [x] **API 测试**：支持对 API 接口及带目录路径的目标进行扫描
 - [x] **POC 生成**：提供图形化界面辅助生成简单 POC
 - [x] **扫描进度实时显示**：提供可视化进度条展示当前扫描状态
-- [x] **扫描结果导出**
-- [x] **POC导出（批量导出）** v3.1.7
-- [x] **POC生成**：Raw格式时自动解析模版 v3.1.8
-- [x] **全局请求头**：支持配置全局请求头，如配置全局Cookie等。v3.2.3
-- [x] **内置POC抓包**：内置POC抓包工具，实现对扫描请求进行抓包，方便进行POC调试。v3.2.3
+- [x] 扫描结果导出
+- [x] **POC 导出**（批量导出） v3.1.7
+- [x] **POC 生成优化**：Raw 格式下自动解析模板结构 v3.1.8
+- [x] **全局请求头**：支持配置全局请求头（如 Cookie 等） - v3.2.3
+- [x] **内置 POC 抓包**：集成抓包工具，可对扫描请求实时抓包，便于 POC 调试 v3.2.3
+- [x] **新增高级搜索、重载 POC 功能** v3.2.4
+- [x] **新增POC 编辑/添加时可折叠参数、目标与结果面板** v3.2.4  
+- [x] **新增任务列表支持增删已选 POC** v3.2.4  
+- [x] **新增支持拖拽 YAML 文件或 POC 文件夹快速导入** v3.2.4  
+- [x] **新增任务列表支持导出扫描统计报告**（Beta，docx 格式）v3.2.4  
+- [x] **新增POC 编辑器支持 YAML 语法检查** v3.2.4
 
 ## 1、安装
 >  **常见问题**：关于使用与安装的常见疑问，可跳转至 [常见问题](#常见问题) 板块查阅。
 ### 1.1 MacOS 安装
-将`Wavely.app`拖移至`Applications`文件夹中。在终端执行：
+将 `Wavely.app` 拖移至 `Applications` 文件夹，然后在终端执行：
 ``` bash
 sudo xattr -d com.apple.quarantine /Applications/Wavely.app 
 ```
 
 ### 1.2 Windows 安装步骤
-- 下载对应压缩包并解压，执行Wavely-xxx-installer.exe安装程序
+- 下载压缩包并解压，运行 Wavely-windows-installer.exe 完成安装。
 
 ###  1.3 DNSLOG 设置说明
-- 系统默认采用 Nuclei 默认 DNSLOG 服务。
-- 如需搭建个人 Nuclei DNSLOG 服务器，可参考：[搭建指南](https://github.com/projectdiscovery/interactsh) 。
-
+- 系统默认使用 Nuclei 官方 DNSLog 服务。
+- 如需搭建私有 DNSLog 服务器，请参考：[Interactsh 搭建指南](https://github.com/projectdiscovery/interactsh)。
 
 
 ## 2、使用
 #### 2.1 注册
-Wavely使用注册机制，3.2.0及以上版本与旧版本证书不兼容。若需激活码，可通过以下方式获取：
-- 扫描赞赏码并备注您的邮箱（一年有效）；赞赏 50 及以上即可获得永久激活权限，且可免费享受后续所有版本更新。
-- 如未及时收到激活码，可通过邮箱：id_0909186@foxmail.com联系。
-- Wavely开发过程不易，感谢您的支持！
-- 有bug或有新的功能建议可在issue上提出。
+Wavely 的注册与激活说明请参阅官方文档：：https://github.com/perlh/Wavely/wiki
 
-#### 2.2 导入 POC
-- 点击`从文件夹中导入POC`按钮，选择存放` nuclei poc `文件的目录。
+#### 2.2 导入 POC（3.2.4及以上）
+- 将包含 POC 的文件夹直接拖拽至 Wavely 主窗口，即可自动完成批量导入。
 
-![alt text](imgs/090907.png)
+![alt text](imgs/3.2.5/3.png)
+![alt text](imgs/3.2.5/7.png)
 
 ####  2.3 使用
 
 ##### 扫描
-![main](imgs/img/1.png)
+![main](imgs/3.2.5/2.png)
 ##### 抓包
+编辑模版
 ![main](imgs/img/2.png)
+抓包管理
 ![main](imgs/img/3.png)
-![main](imgs/img/4.png)
-![main](imgs/img/5.png)
+抓包信息
+![main](imgs/3.2.5/5.png)
 ##### 全局请求头
 ![main](imgs/img/6.png)
 ![main](imgs/img/7.png)
-![main](imgs/img/8.png)
-![main](imgs/img/9.png)
-![main](imgs/img/10.png)
-
+全局请求头详细
+![main](imgs/3.2.5/6.png)
 
 
 ## 常见问题
