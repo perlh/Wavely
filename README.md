@@ -1,8 +1,14 @@
-## Wavely - Nuclei POC漏洞管理与验证可视化工具
-- Wiki（下载与激活）：https://github.com/perlh/Wavely/wiki
+
+# 🌊 Wavely — Nuclei POC 管理与漏洞验证工具
+🔍 一款面向安全研究人员的本地化 POC 管理与漏洞验证平台，支持自定义 POC、抓包调试、全局请求头配置等功能。
+
 
 ![main](imgs/3.2.5/1.png)
-![main](imgs/img/11.png)
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=perlh/wavely&type=Date)](https://star-history.com/#perlh/wavely&Date)
+ 
+- 详细安装与激活方法请参阅：[Wavely 官方 Wiki](https://github.com/perlh/Wavely/wiki)
 
 ## ✨ 功能一览
 - [x] **POC 模板管理**：支持对 Nuclei POC 模板的增删查改操作
@@ -29,103 +35,132 @@
 - [x] **新增任务列表支持导出扫描统计报告**（Beta，docx 格式）v3.2.4  
 - [x] **新增POC 编辑器支持 YAML 语法检查** v3.2.4
 
-## 1、安装
->  **常见问题**：关于使用与安装的常见疑问，可跳转至 [常见问题](#常见问题) 板块查阅。
-
-### 1.1 MacOS （安装/更新）步骤
-将 `Wavely.app` 拖移至 `Applications` 文件夹，然后在终端执行：
-``` bash
-sudo xattr -d com.apple.quarantine /Applications/Wavely.app 
-```
-
-### 1.2 Windows （安装/更新）步骤
-- 下载压缩包并解压，运行 Wavely-windows-installer.exe 完成安装。
-
-
-###  1.3 DNSLOG 设置说明
-- 系统默认使用 Nuclei 官方 DNSLog 服务。
-- 如需搭建私有 DNSLog 服务器，请参考：[Interactsh 搭建指南](https://github.com/projectdiscovery/interactsh)。
-
-
-## 2、使用
-#### 2.1 注册
-Wavely 的注册与激活说明请参阅官方文档：：https://github.com/perlh/Wavely/wiki
-
-#### 2.2 导入 POC（3.2.4及以上）
-- 将包含 POC 的文件夹直接拖拽至 Wavely 主窗口，即可自动完成批量导入。
-
-![alt text](imgs/3.2.5/3.png)
-![alt text](imgs/3.2.5/7.png)
-
-####  2.3 使用
-
-##### 扫描
-![main](imgs/3.2.5/2.png)
-##### 抓包
-编辑模版
-![main](imgs/img/2.png)
-抓包管理
-![main](imgs/img/3.png)
-抓包信息
-![main](imgs/3.2.5/5.png)
-##### 全局请求头
-![main](imgs/img/6.png)
-![main](imgs/img/7.png)
-全局请求头详细
-![main](imgs/3.2.5/6.png)
-
-
-## 3、证书
-
-软件升级或更新**不会导致许可证（license）丢失**。
-但如需进行系统重装、迁移设备等操作，请**务必提前备份 license 文件**。
-
-该文件是您本地的授权凭证，**一旦丢失将无法自动恢复**。若不慎遗失，请通过邮件与我们联系。
-#### License 文件位置
-- macOS / Linux
-位于用户主目录的隐藏配置目录中：
-```
-bash
-cat ~/.wavely/license
-```
-- Windows
-位于 Wavely.exe 所在目录下，与可执行文件同级：
-```
-Wavely.exe
-license
-```
 
 
 
 
-## 常见问题
-### Windows 启动时闪现命令框
-此为正常现象，不会对 App 功能产生任何影响，可放心使用。
-###  Macos 无法打开App
-因未使用 Apple 证书签名 App，可能出现解除安全验证提示，如**软件显示禁止符号** 、 **无法验证软件身份** 或 **提示已损坏故不能正常打开** ，可参考以下方案解决：
 
-##### 方案1
-在终端执行命令：
-``` bash
+
+
+
+
+
+
+
+
+## 📦 安装指南
+💡 提示：关于使用与安装的常见问题，请参阅文末 [常见问题](#常见问题) 部分。
+
+### 🍏 macOS（安装 / 更新）
+
+-  将 Wavely.app 拖入 Applications 文件夹
+-  打开**终端**，执行以下命令解除系统隔离属性：
+
+```bash
 sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ```
-##### 方案2
-执行命令：
-``` bash
+
+### 🪟 Windows（安装 / 更新）
+
+- 下载最新压缩包并解压
+- 运行 Wavely-windows-installer.exe 完成安装
+
+### 🌐 DNSLog 配置说明
+- 默认使用 Nuclei 官方 Interactsh 服务（无需额外配置）
+- 如需使用私有 DNSLog 服务器，请参考官方搭建指南：
+👉 [Interactsh 搭建文档](https://github.com/projectdiscovery/interactsh)
+
+### 🔑 许可证（License）管理
+✨ **软件升级或更新 不会导致许可证丢失！**
+
+但请注意：
+> - 系统重装、设备迁移等操作可能清除授权文件
+> - 请务必提前备份 license 文件
+
+#### 📍 License 文件位置
+
+|平台 |路径|
+|-|-|
+|macOS / Linux| ~/.wavely/license|
+|Windows| 与 Wavely.exe 同级目录下|
+
+
+
+> ❗ 重要：该文件是您唯一的本地授权凭证，一旦丢失将无法自动恢复。如不慎遗失，请通过邮箱联系开发者。
+
+## 🚀 基本使用
+### 🔐 2.1 激活注册
+- 请参考官方激活说明文档：
+🔗 [Wavely 激活指南](https://github.com/perlh/Wavely/wiki)
+
+### ➕ 2.2 导入 POC（v3.2.4+）
+- 将包含 POC 的文件夹直接拖拽至主窗口，即可自动批量导入！
+
+![POC 导入](imgs/3.2.5/3.png)
+![导入成功](imgs/3.2.5/7.png)
+
+### ✏️ 2.3 添加 POC
+![添加 POC](imgs/img/11.png)
+### ✏️ 2.4 编辑 POC
+![编辑 POC](imgs/3.2.5/2.png)
+
+### 🕵️ 2.5 抓包工具
+- 编辑模板
+
+![编辑模板](imgs/img/2.png)
+- 抓包管理
+
+![抓包管理](imgs/img/3.png)
+
+- 抓包详情
+
+![抓包信息](imgs/3.2.5/5.png)
+
+### 🌐 2.6 全局请求头
+- 配置界面
+
+![全局请求头1](imgs/img/6.png)
+![全局请求头2](imgs/img/7.png)
+
+- 详细设置
+
+![请求头详情](imgs/3.2.5/6.png)
+
+
+## ❓ 常见问题
+### ❓ Windows 启动时闪现命令框？
+✅ 正常现象，不影响功能，可放心使用。
+### ❓ macOS 无法打开 App？
+因未使用 Apple 官方证书签名，可能出现以下提示：
+- “已损坏，无法打开”
+- “无法验证开发者身份”
+- App 图标显示禁止符号
+
+##### ✅ 解决方案：
+
+方案一（推荐）：移除隔离属性
+```bash
+sudo xattr -d com.apple.quarantine /Applications/Wavely.app
+```
+方案二：修复执行权限
+```bash
 chmod 755 /Applications/Wavely.app/Contents/MacOS/Wavely
 ```
+## ⚠️ 免责声明
 
+本工具仅面向合法授权的企业安全建设行为，如您需要测试本工具的可用性，请自行搭建靶机环境。 
+- 为避免被恶意使用，本项目所有收录的poc均为漏洞的理论判断，不存在漏洞利用过程，不会对目标发起真实攻击和漏洞利用。 
+- 在使用本工具进行检测时，您应确保该行为符合当地的法律法规，并且已经取得了足够的授权。
+- 请勿对非授权目标进行扫描。 如您在使用本工具的过程中存在任何非法行为，您需自行承担相应后果，我们将不承担任何法律及连带责任。
 
-# 免责声明
-本工具仅面向合法授权的企业安全建设行为，如您需要测试本工具的可用性，请自行搭建靶机环境。 为避免被恶意使用，本项目所有收录的poc均为漏洞的理论判断，不存在漏洞利用过程，不会对目标发起真实攻击和漏洞利用。 在使用本工具进行检测时，您应确保该行为符合当地的法律法规，并且已经取得了足够的授权。请勿对非授权目标进行扫描。 如您在使用本工具的过程中存在任何非法行为，您需自行承担相应后果，我们将不承担任何法律及连带责任。
+## ❤️ 支持我们
 
-## Star History
+如果 Wavely 对您的工作有所帮助，欢迎通过赞赏支持开发！
+微信赞赏码
+<div align="center">
+<img src="imgs/wechat_doit2.png" alt="微信赞赏" width="300" />
+</div>
+您的支持是我们持续维护和迭代的动力！感谢每一位用户 🙏
 
-[![Star History Chart](https://api.star-history.com/svg?repos=perlh/wavely&type=Date)](https://star-history.com/#perlh/wavely&Date)
-
-# 捐赠
-如果 Wavely 对您帮助很大，您可以通过以下方式支持我们：
-
-### 赞赏码赞助
-<img src="imgs/wechat_doit2.png" alt="图片描述" width="400" height="400">
-<!-- ![main](imgs/sponsor.jpg) -->
+📌 项目地址：[github.com/perlh/Wavely](https://github.com/perlh/Wavely)
+📩 反馈 & 激活问题：id_0909186@foxmail.com
