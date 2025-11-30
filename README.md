@@ -6,7 +6,7 @@
 ![main](imgs/3.2.5/1.png)
 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=perlh/wavely&type=Date)](https://star-history.com/#perlh/wavely&Date)
+
  
 - 详细安装与激活方法请参阅：[Wavely 官方 Wiki](https://github.com/perlh/Wavely/wiki)
 
@@ -164,3 +164,6 @@ chmod 755 /Applications/Wavely.app/Contents/MacOS/Wavely
 
 📌 项目地址：[github.com/perlh/Wavely](https://github.com/perlh/Wavely)
 📩 反馈 & 激活问题：id_0909186@foxmail.com
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=perlh/wavely&type=Date)](https://star-history.com/#perlh/wavely&Date)
