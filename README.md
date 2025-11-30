@@ -165,5 +165,6 @@ chmod 755 /Applications/Wavely.app/Contents/MacOS/Wavely
 📌 项目地址：[github.com/perlh/Wavely](https://github.com/perlh/Wavely)
 📩 反馈 & 激活问题：id_0909186@foxmail.com
 
+## 📈 Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=perlh/wavely&type=Date)](https://star-history.com/#perlh/wavely&Date)
