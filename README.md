@@ -31,14 +31,16 @@
 
 ## 1、安装
 >  **常见问题**：关于使用与安装的常见疑问，可跳转至 [常见问题](#常见问题) 板块查阅。
-### 1.1 MacOS 安装
+
+### 1.1 MacOS （安装/更新）步骤
 将 `Wavely.app` 拖移至 `Applications` 文件夹，然后在终端执行：
 ``` bash
 sudo xattr -d com.apple.quarantine /Applications/Wavely.app 
 ```
 
-### 1.2 Windows 安装步骤
+### 1.2 Windows （安装/更新）步骤
 - 下载压缩包并解压，运行 Wavely-windows-installer.exe 完成安装。
+
 
 ###  1.3 DNSLOG 设置说明
 - 系统默认使用 Nuclei 官方 DNSLog 服务。
@@ -92,6 +94,7 @@ cat ~/.wavely/license
 Wavely.exe
 license
 ```
+
 
 
 
