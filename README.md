@@ -153,6 +153,11 @@ chmod 755 /Applications/Wavely.app/Contents/MacOS/Wavely
 - 在使用本工具进行检测时，您应确保该行为符合当地的法律法规，并且已经取得了足够的授权。
 - 请勿对非授权目标进行扫描。 如您在使用本工具的过程中存在任何非法行为，您需自行承担相应后果，我们将不承担任何法律及连带责任。
 
+
+## 📈 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=perlh/wavely&type=Date)](https://star-history.com/#perlh/wavely&Date)
+
 ## ❤️ 支持我们
 
 如果 Wavely 对您的工作有所帮助，欢迎通过赞赏支持开发！
@@ -165,6 +170,3 @@ chmod 755 /Applications/Wavely.app/Contents/MacOS/Wavely
 📌 项目地址：[github.com/perlh/Wavely](https://github.com/perlh/Wavely)
 📩 反馈 & 激活问题：id_0909186@foxmail.com
 
-## 📈 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=perlh/wavely&type=Date)](https://star-history.com/#perlh/wavely&Date)
