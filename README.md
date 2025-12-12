@@ -3,8 +3,8 @@
 🔍 一款面向安全研究人员的本地化 POC 管理与漏洞验证平台，支持自定义 POC、抓包调试、全局请求头配置等功能。
 
 
-![main](imgs/3.2.5/1.png)
-
+![main](imgs/3.2.7/main1.png)
+![main](imgs/3.2.7/main2.png)
 
 
  
@@ -34,6 +34,9 @@
 - [x] **新增支持拖拽 YAML 文件或 POC 文件夹快速导入** v3.2.4  
 - [x] **新增任务列表支持导出扫描统计报告**（Beta，docx 格式）v3.2.4  
 - [x] **新增POC 编辑器支持 YAML 语法检查** v3.2.4
+- [x] **新增DSL、Binary、Size等匹配，新增extractors提取器，支持regex、json、kval等提取方式** v3.2.7
+- [x] **新增基于tag标签分组搜索过滤** v3.2.7
+- [x] **新增nuclei 请求超时配置参数** v3.2.7
 
 
 
