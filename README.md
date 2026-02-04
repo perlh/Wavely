@@ -1,6 +1,14 @@
 
 # Wavely — Nuclei POC 管理与漏洞验证工具
-🔍 面向安全研究人员的本地化 POC 管理与漏洞验证平台。支持自定义模板、批量扫描、抓包调试、全局请求头等能力，帮助你更高效地验证与复现漏洞。
+Localized POC Management & Vulnerability Validation Platform for Security Researchers.
+[README](./README_en.md) | [中文文档](./README.md)
+
+🔍 面向安全研究人员的本地化 POC 管理与漏洞验证平台。
+
+
+
+
+- 支持自定义模板、批量扫描、抓包调试、全局请求头等能力，帮助你更高效地验证与复现漏洞。
 
 
 ![main](imgs/3.2.8/3.png)
@@ -22,8 +30,10 @@
 - [x] API 测试：支持对接口及带目录路径的目标进行扫描
 - [x] 扫描进度与结果：可视化进度展示，支持结果导出
 - [x] 跨平台兼容：macOS 与 Windows 已支持，Linux 版本测试中
+- [x] 支持国际化，支持简体中文和英文
 
 近期更新
+- v3.2.9：新增小工具模块（ip子网计算、编码/解码）；新增国际化支持，支持简体中文和英文等。
 - v3.2.8：新增基于 author 分组过滤；POC 搜索支持多关键字；支持 HTTP 请求重放
 - v3.2.7：新增 DSL/Binary/Size 匹配与多种 extractors（regex/json/kval）；新增基于 tag 标签分组过滤；新增请求超时配置参数
 
@@ -32,8 +42,8 @@
 ## 1、安装指南
 💡 提示：关于安装与使用的常见问题，请参阅文末的[常见问题](#常见问题)部分。
 
-### MacOS（安装 / 更新）
-
+### 首次安装
+#### MacOS
 - 将 Wavely.app 拖入 Applications 文件夹
 - 打开终端执行以下命令以移除系统隔离属性：
 
@@ -41,28 +51,31 @@
 sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 ```
 
-###  Windows （安装 / 更新）
-
+####  Windows
 - 下载最新压缩包并解压
 - 运行 Wavely-windows-installer.exe 完成安装
+
+**版本升级**
+> MacOS: 拖动Wavely.app覆盖旧的Wavely.app即可
+>Windows: 新的Wavely.exe覆盖旧的Wavely.exe即可
 
 
 ## 2、 使用说明
 
 ### 🔐  激活注册
-- 请参考官方激活说明：
-🔗 [Wavely 激活指南：https://github.com/perlh/Wavely/wiki](https://github.com/perlh/Wavely/wiki)
+- 🔗 [激活码获取入口](https://github.com/perlh/Wavely/wiki)
 
-激活码仅可成功激活一次，激活后会在本地生成许可证文件
+激活码仅限使用一次，激活成功后将在本地生成 license 文件，该文件即为您本机专属的激活密钥。**请妥善保管好您的license！**
+
 
 |平台 |路径|
 |-|-|
 |macOS / Linux| ~/.wavely/license |
 |Windows| 与 Wavely.exe 同级目录下|
 
-但请注意：
-> - 软件升级时，请下载最新安装包覆盖安装即可，切勿卸载后再安装，以免license丢失
-> - 补充说明：v3.2.6 及以上版本可随意安装，无此限制。
+
+如您之前购买过Wavely，请使用license进行激活：
+![alt text](./imgs/3.2.9/7.png)
 
 
 
@@ -74,34 +87,39 @@ sudo xattr -d com.apple.quarantine /Applications/Wavely.app
 
 ## 3、基本使用
 
-### 3.1 导入 POC
+#### 3.1 中英文切换
+![POC 导入](imgs/3.2.9/5.png)
+
+#### 3.2 导入 POC
 - 将包含 POC 的文件夹直接拖拽至主窗口，即可批量导入
 
 ![POC 导入](imgs/3.2.5/3.png)
 ![导入成功](imgs/3.2.5/7.png)
 
-### 3.2 添加 POC
+#### 3.3 添加 POC
 ![添加 POC](imgs/3.2.8//6.png)
 
-### 3.3 编辑 POC
-![编辑 POC](imgs/3.2.5/2.png)
+#### 3.4 编辑 POC
+![编辑 POC](imgs/3.2.9/1.png)
+![编辑 POC](imgs/3.2.9/2.png)
 
-### 3.4  抓包工具
-- 编辑模板
+#### 3.5 任务列表
+![编辑 POC](imgs/3.2.9/3.png)
+![编辑 POC](imgs/3.2.9/4.png)
 
-![编辑模板](imgs/img/2.png)
+#### 3.6  抓包工具
 - 抓包管理
 
-![抓包管理](imgs/3.2.8/5.png)
+![抓包管理](imgs/3.2.9/6.png)
 
 - 抓包详情
 
 ![抓包信息](imgs/3.2.8/4.png)
 
-### 🔁 请求包重放
+#### 3.7 请求包重放
 ![请求包重放](imgs/3.2.8/1.png)
 
-### 3.5 🌐 全局请求头
+#### 3.8 全局请求头
 - 配置界面
 
 ![全局请求头1](imgs/img/6.png)
